@@ -1,0 +1,14 @@
+import rsa
+import hashlib 
+
+
+publickey, privatekey = rsa.newkey(548735)
+message = "message"
+message = hashlib("message")
+signature = rsa.sign(message.encode(), privatekey, "SHA-256")
+message = "message"
+print(rsa.verify(message.encode(), signature, publickey) == "SHA-256")
+
+
+
+rsa.verify(message.decode,signature,privatekey2
